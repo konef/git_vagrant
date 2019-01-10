@@ -1,0 +1,12 @@
+- name: Start VM
+  hosts: localhost
+
+  tasks:
+  - vagrant_box:
+      path: "{{ playbook_dir }}"
+      state: running
+    register: vm
+
+
+
+ 
